@@ -1,0 +1,39 @@
+body {
+    background-color: darkgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    background-color: darkgray;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card {
+    background-color: darkgray;
+}
+
+.image img {
+    border-radius: 10px;
+    height: 150px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
