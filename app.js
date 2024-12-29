@@ -1,7 +1,5 @@
 /*-------------- Constants -------------*/
 
-const card = document.querySelectorAll('.card')
-console.log(card)
 
 /*---------- Variables (state) ---------*/
 
