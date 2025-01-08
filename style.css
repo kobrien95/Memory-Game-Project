@@ -10,36 +10,37 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.game-board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 /* Container for all cards */
 .card-container {
     display: flex;
-    grid-template-columns: repeat(4, 200px); /* Adjust based on how many cards you want per row */
+    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px;
   }
   
   /* Styling the card (front and back) */
   .card {
+    display: flex;
     position: relative;
     width: 200px;
-    height: 300px;
+    height: 250px;
     perspective: 1000px; /* This defines the 3D space */
+    margin: 10px;
   }
   
-  /* The actual flip effect */
   .card-inner {
     position: absolute;
     width: 100%;
@@ -49,7 +50,6 @@ main {
     cursor: pointer;
   }
   
-  /* Front of the card */
   .card-front,
   .card-back {
     position: absolute;
@@ -59,23 +59,21 @@ main {
   }
   
   .card-front {
-    /* background: #f1f1f1; Card front background */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     transform: rotateY(180deg);
   }
   
   .card-back {
-    background: #1c1c1c; /* Card back background */
+    background: black; /* Card back background */
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    border: 1px solid #ddd;
-    /* transform: rotateY(180deg); Initially rotate the back side */
+    border: 1px solid white;
   }
   
   /* Flip the card when clicked */
@@ -96,4 +94,11 @@ main {
     height: 100%;
     object-fit: cover; /* Ensure the image fits the card */
   }
-  
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: yellow;
+  padding: 1px;
+  cursor: pointer;
+}

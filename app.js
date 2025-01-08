@@ -1,12 +1,17 @@
 /*-------------- Constants -------------*/
 
 const card = document.querySelectorAll('.card');
-const playButton = document.getElementById('playButton')
+const playButton = document.getElementById('play-again-btn')
+const totalPairs = 6;
+
+// const timerElement = document.getElementById('timer');
+// const gameBoard = document.getElementById('gameBoard')
 
 /*---------- Variables (state) ---------*/
 
 let cards = Array.from(document.querySelectorAll('.card'));
 let flippedCards = [];
+let matchedPairs = 0;
 
 /*----- Cached Element References  -----*/
 
@@ -23,28 +28,38 @@ function shuffleCards() {
 
 shuffleCards()
 
+// function checkIfGameWon() {
+//   matchedPairs++;
+//   if (matchedPairs === totalPairs) {
+//     alert('Congradulations You Won!');
+//   }
+// }
+
+// function endGame() {
+//   alert('You Win');
+// }
+
+// checkIfGameWon()
+// endGame()
+
 /*----------- Event Listeners ----------*/
 
 
 cards.forEach(card => {
   card.addEventListener('click', () => {
-    // Prevent clicking the same card twice
     if (flippedCards.length < 2 && !card.querySelector('.card-inner').classList.contains('flipped')) {
       flippedCards.push(card);
       card.querySelector('.card-inner').classList.add('flipped');
       
-      // Log which cards are flipped
-      console.log(`Flipped Cards: ${flippedCards.map(card => card.dataset.id).join(', ')}`);
+      // console.log(`Flipped Cards: ${flippedCards.map(card => card.dataset.id).join(', ')}`);
 
       if (flippedCards.length === 2) {
-        // Check if cards match
         const [firstCard, secondCard] = flippedCards;
         
-        // Log the data-id values to ensure they're being compared correctly
-        console.log(`Comparing cards with IDs: ${firstCard.dataset.id} and ${secondCard.dataset.id}`);
+        // console.log(`Comparing cards with IDs: ${firstCard.dataset.id} and ${secondCard.dataset.id}`);
 
         if (firstCard.dataset.id === secondCard.dataset.id) {
-          console.log('Match found!');
+          // console.log('Match found!');
         } else {
           setTimeout(() => {
             firstCard.querySelector('.card-inner').classList.remove('flipped');
@@ -52,7 +67,7 @@ cards.forEach(card => {
           }, 1000); // Wait 1 second before flipping back
         }
 
-        flippedCards = []; // Reset the flippedCards array
+        flippedCards = [];
       }
     }
   });
