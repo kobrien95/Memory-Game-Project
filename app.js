@@ -4,6 +4,7 @@ const card = document.querySelectorAll('.card');
 const playButton = document.getElementById('play-again-btn')
 const totalPairs = 6;
 
+
 // const timerElement = document.getElementById('timer');
 // const gameBoard = document.getElementById('gameBoard')
 
@@ -28,22 +29,29 @@ function shuffleCards() {
 
 shuffleCards()
 
-// function checkIfGameWon() {
-//   matchedPairs++;
-//   if (matchedPairs === totalPairs) {
-//     alert('Congradulations You Won!');
-//   }
-// }
+function resetGame() {
+  flippedCards = [];//Reset the flipped card Array
+  cards.forEach(card => {
+    card.querySelector('.card-inner').classList.remove('flipped'); //The cards that are already flipped gets reset and flipped
+    card.classList.remove('hidden'); //Make sure the cards are hidden.
+  });
 
-// function endGame() {
-//   alert('You Win');
-// }
+  shuffleCards();
+}
 
-// checkIfGameWon()
-// endGame()
+playButton.addEventListener('click', resetGame);
+
+function Winner() {
+  if(matchedPairs === totalPairs) {
+    alert('Congratulation, You Win!');
+  }
+}
+
+Winner()
 
 /*----------- Event Listeners ----------*/
 
+playButton.addEventListener('click', (resetGame));
 
 cards.forEach(card => {
   card.addEventListener('click', () => {
@@ -60,6 +68,8 @@ cards.forEach(card => {
 
         if (firstCard.dataset.id === secondCard.dataset.id) {
           // console.log('Match found!');
+          matchedPairs++;//Added the macthedPair here so it can check to see if all cards are matched and log winner!
+          Winner();
         } else {
           setTimeout(() => {
             firstCard.querySelector('.card-inner').classList.remove('flipped');
