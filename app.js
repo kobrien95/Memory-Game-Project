@@ -25,6 +25,17 @@ function shuffleCards() {
 
 shuffleCards()
 
+function showbrief() {
+  card.forEach(card => {
+    card.querySelector('.card-inner').classList.add('flipped');
+  })
+  setTimeout(() => {
+    card.forEach(card => {
+      card.querySelector('.card-inner').classList.remove('flipped');
+    })
+  },2000);
+}
+
 function resetGame() {
     flippedCards = [];
   cards.forEach(card => {
@@ -45,18 +56,6 @@ function checkWinCondition() {
     document.getElementById('win-message').classList.remove('hidden');
   }
 }
-
-function showbrief() {
-  card.forEach(card => {
-    card.querySelector('.card-inner').classList.add('flipped');
-  })
-  setTimeout(() => {
-    card.forEach(card => {
-      card.querySelector('.card-inner').classList.remove('flipped');
-    })
-  },2000);
-}
-
 
 /*----------- Event Listeners ----------*/
 
