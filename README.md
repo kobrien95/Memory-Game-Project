@@ -1,3 +1,5 @@
+<div><a herf="https://github.com/kobrien95/Memory-Game-Project.git><img src=/assets/Project screen shot.png></div>
+
 # Music Albums Memory Game!
 
 # ***Created by Kristian O'Brien***
@@ -13,8 +15,14 @@ Hello World! I'm so happy to share with everyone the very first project I’ve m
 - When the user matches all cards there would be winning message that pops up.
 - If the user would like to play again, there is a play again button located at the bottom of the game, the cards will randomly shuffle and the game will restart.
 
+# ***Resources used while making the game.***
 
-# Things I would like to add to the game ( *With some help from other music lovers* ).
+- <a href="https://generalassemb.ly/">General Assembly</a>
+- <a href="https://chatgpt.com/">Chat gpt</a>
+- <a href="https://www.google.com/">Google</a>
+
+
+# Things I would like to add to the game in the future ( *With some help from other music lovers* ).
 
 - I would like anyone who is intrigued in my game to send me over some of their favorite albums.
 - I would like to add a timer at the top of the screen, to add a little intensity to the game if the timer runs out and the user is still trying to match cards it be game over.
