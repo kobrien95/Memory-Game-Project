@@ -1,5 +1,3 @@
-![Game Screenshot](/assets/Project screen shot.png)
-
 # Music Albums Memory Game!
 
 # ***Created by Kristian O'Brien***
