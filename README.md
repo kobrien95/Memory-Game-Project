@@ -1,4 +1,4 @@
-![name of image](./images/Project screen shot.png)
+![name of image]("./images/Project screen shot.png")
 
 <a href="https://kobrien95.github.io/Memory-Game-Project/">Click Here To Play My Memory Game!</a>
 
