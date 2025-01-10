@@ -1,4 +1,4 @@
-<div><a herf="https://github.com/kobrien95/Memory-Game-Project.git><img src=/assets/Project screen shot.png></div>
+<div><a href="https://github.com/kobrien95/Memory-Game-Project.git><img src=/assets/Project screen shot.png></div>
 
 # Music Albums Memory Game!
 
