@@ -1,11 +1,11 @@
-<a href="https://github.com/kobrien95/Memory-Game-Project.git><img src=/assets/Project screen shot.png>
+![Game Screenshot](/assets/Project screen shot.png)
 
 # Music Albums Memory Game!
 
 # ***Created by Kristian O'Brien***
 
 
-Hello World! I'm so happy to share with everyone the very first project I’ve made on my own, since starting my Software Engineer journey. I’ve created a Memory Game from scratch with a little help from ***Friends and Family***, I’ll explain what I mean by that in the concept of my game. My memory game consists of matching up some of my friends and family favorite **Albums** ( I use the album covers pictures ), it’s pretty straightforward match up the album covers and you win.
+Hello World! I'm so happy to share with everyone the very first project I’ve made on my own, since starting my Software Engineer journey. I’ve created a Memory Game from scratch with a little help from ***Friends and Family***, I’ll explain what I mean by that in the concept of my game. My memory game consists of matching up some of my friends and family favorite **Albums** ( I use the album covers pictures ), I've always like memory games as well as music, and thought it would be a great challenge to try and create this game. With explaining how the game works eariler, it’s pretty straightforward match up the album covers and you win.
 
 # Game Concept
 
