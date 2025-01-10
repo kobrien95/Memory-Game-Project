@@ -1,3 +1,7 @@
+![name of image](./images/Project screen shot.png)
+
+<a href="https://kobrien95.github.io/Memory-Game-Project/">Click Here To Play My Memory Game!</a>
+
 # Music Albums Memory Game!
 
 # ***Created by Kristian O'Brien***
